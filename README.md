@@ -1,4 +1,4 @@
-# bookmeter
+# export_bookmeter
 
 読書メータの読んだ本のリストを csv および json でエキスポートします
 
@@ -36,7 +36,7 @@ pip install lxml
 
 ### 読んだ本の一覧のエキスポート
 
-ユーザ ID を引数として、get_bookmeter.py を実行します。
+ユーザ ID を引数として、export_bookmeter.py を実行します。
 暫くして終了するとカレントディレクトリに
 
 * ```bookmeter_<年月日>.csv```
@@ -44,12 +44,12 @@ pip install lxml
 
 の 2つのファイルが作成されているので、あとは自由に利用してください。
 
-* サーバ負荷を下げるためデータ取得間隔を開けています。のんびり待ってください。
+* サーバ負荷を下げるためデータ取得間隔を 30 秒としています。のんびり待ってください。
 * csv ファイルは BOM 付き UTF-8 です。
 
 __実行例(ユーザ ID はダミーです)__
 ```
-> python get_bookmeter.py 999999
+> python export_bookmeter.py 999999
 page: 1 , status_code: 200
 page: 2 , status_code: 200
 page: 3 , status_code: 200
