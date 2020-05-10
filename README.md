@@ -25,6 +25,8 @@ pip install requests
 pip install lxml
 ```
 
+pip freeze の結果を requirements.txt に保存しています。
+
 ### 自分のユーザ ID の確認
 
 エキスポートには自分のユーザ ID が必要です。
